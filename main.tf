@@ -1,5 +1,5 @@
 resource "aws_glue_job" "this" {
-	# checkov:skip=CKV_AWS_195: Security configuration managed outside of this module
+  # checkov:skip=CKV_AWS_195: Security configuration managed outside of this module
   name              = "${local.stack}-glue-job"
   description       = var.description
   role_arn          = var.role_arn
@@ -14,5 +14,5 @@ resource "aws_glue_job" "this" {
   command {
     script_location = var.script_location
   }
-  
+
 }
