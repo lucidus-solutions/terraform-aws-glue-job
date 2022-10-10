@@ -43,6 +43,7 @@ variable "worker_type" {
 variable "number_of_workers" {
   type        = number
   description = "The number of workers of a defined workerType that are allocated when a job runs"
+  default     = 1
   sensitive   = false
 }
 
