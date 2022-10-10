@@ -1,5 +1,5 @@
 resource "aws_glue_job" "this" {
-  name              = var.name
+  name              = "${local.stack}-glue-job"
   description       = var.description
   role_arn          = var.role_arn
   glue_version      = var.glue_version
